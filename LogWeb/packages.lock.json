@@ -199,6 +199,34 @@
       "log.models": {
         "type": "Project"
       }
+    },
+    "net10.0/win-x64": {
+      "System.DirectoryServices.AccountManagement": {
+        "type": "Direct",
+        "requested": "[10.0.0, )",
+        "resolved": "10.0.0",
+        "contentHash": "rM6TRNWRa/8N/oILnHWtfhZf1/RotknaaCRc9LqgKMomf7rwPwSHKnXZ6AyimjfFcZT1rZX1XJrt6/VkhSGkTw==",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "10.0.0",
+          "System.DirectoryServices": "10.0.0",
+          "System.DirectoryServices.Protocols": "10.0.0"
+        }
+      },
+      "System.DirectoryServices": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "Ha5HTPMXz785jI5bC6OpmlerevzKallwOQzdSflTYL3mEZVwU13qcqSvqCf+7fCHqdRh7Ct0EJDr80BEBXzZ0Q=="
+      },
+      "System.DirectoryServices.Protocols": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "XYQT4aM4S5uo0EM0j5ASsqBVgcz8cTf64rdHAzTo/5zaAnbWn6VeE2gzFxRj089kq82s7Zxd9jCMqfhhcYILew=="
+      },
+      "System.Security.Cryptography.Pkcs": {
+        "type": "Transitive",
+        "resolved": "9.0.9",
+        "contentHash": "Y7/wY5lqrzJOu53yLFLPGaeKBcdWNw193udOFRB2joFDVpXLkmfPpfgks7dEIJYPIrW4k3onwR+4nQz6vIaaqA=="
+      }
     }
   }
 }
