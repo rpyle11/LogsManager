@@ -1,0 +1,43 @@
+﻿@page "/"
+@attribute [StreamRendering]
+@using Log.Models
+<PageTitle>Logs Manager - Logs</PageTitle>
+
+<SectionContent SectionName="PageName"> - Logs</SectionContent>
+<div class="d-flex flex-row">
+    <div class="dateholder">
+        <label for="StartDatePicker">Start Date</label>
+        <TelerikDatePicker T="DateTime" ValueChanged="@(StartDateChanged)" Size="md" Rounded="md" Format="MM/dd/yyyy" Id="StartDatePicker" Value="@StartDate" Min="@MinDate" Max="@MaxDate"></TelerikDatePicker>
+    </div>
+
+    <div>
+        <label for="EndDatePicker">End Date</label>
+        <TelerikDatePicker T="DateTime" ValueChanged="@(EndDateChanged)" Size="md" Rounded="md" Format="MM/dd/yyyy" Id="EndDatePicker" Value="@EndDate" Min="@MinDate" Max="@MaxDate"></TelerikDatePicker>
+    </div>
+
+</div>
+<hr />
+<div>
+    <TelerikLoaderContainer Size="md" ThemeColor="Primary" Visible="@PageWait" LoaderType="LoaderType.InfiniteSpinner" LoaderPosition="LoaderPosition.Start" Text="Loading..."></TelerikLoaderContainer>
+
+    <TelerikGrid Data="@LogData" EnableLoaderContainer="true" Sortable="true" FilterMenuType="FilterMenuType.CheckBoxList" FilterMode="GridFilterMode.FilterMenu" Size="@ThemeConstants.Grid.Size.Small" Resizable="true"
+                 Height="600px" Pageable="true" ScrollMode="GridScrollMode.Scrollable" PageSize="20" Groupable="true">
+        <GridToolBarTemplate>
+            <GridCommandButton Command="ExcelExport" Icon="@FontIcon.FileExcel" >Export to Excel</GridCommandButton>
+            <span class="k-toolbar-spacer"></span>
+            <GridSearchBox />
+        </GridToolBarTemplate>
+        <GridExport>
+            <GridExcelExport FileName="ApplicationLogs" AllPages="true" />
+        </GridExport>
+        <GridColumns>
+            <GridColumn DisplayFormat="{0:MM/dd/yyyy hh:mm tt}" Field="@nameof(LogsDto.LogDate)" Title="Date" Filterable="false" Groupable="false" />
+            <GridColumn Field="@nameof(LogsDto.AppName)" Title="Application"></GridColumn>
+            <GridColumn Field="@nameof(LogsDto.AppUser)" Title="User"></GridColumn>
+            <GridColumn Field="@nameof(LogsDto.LogMessage)" Title="Message" FilterMenuType="FilterMenuType.Menu" Groupable="false"></GridColumn>
+            <GridColumn Field="@nameof(LogsDto.LogType)" Title="Error Type"></GridColumn>
+            <GridColumn Field="@nameof(LogsDto.SendEmailAddressList)" Title="Sent To"></GridColumn>
+        </GridColumns>
+
+    </TelerikGrid>
+</div>

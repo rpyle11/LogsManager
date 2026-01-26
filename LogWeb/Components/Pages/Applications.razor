@@ -1,0 +1,73 @@
+﻿@page "/applications"
+@attribute [StreamRendering]
+@using Log.Models
+
+<PageTitle>Logs Manager - Applications</PageTitle>
+<SectionContent SectionName="PageName"> - Applications</SectionContent>
+<div>
+    <TelerikLoaderContainer Size="md" ThemeColor="Primary" Visible="@PageWait" LoaderType="LoaderType.InfiniteSpinner" LoaderPosition="LoaderPosition.Start" Text="Loading..."></TelerikLoaderContainer>
+
+    <TelerikGrid Data="@ApplicationData" EnableLoaderContainer="true" Sortable="true" FilterMenuType="FilterMenuType.CheckBoxList" FilterMode="GridFilterMode.FilterMenu" Size="@ThemeConstants.Grid.Size.Small" Resizable="true"
+                 Height="600px" Pageable="true" ScrollMode="GridScrollMode.Scrollable" PageSize="20" SelectionMode="@GridSelectionMode.Single" @bind-SelectedItems="@SelectedApplications" OnRowClick="@RowClick">
+        <GridToolBarTemplate>
+            <GridCommandButton Command="AddApplication" Icon="@FontIcon.Plus" OnClick="@AddApplication">Add</GridCommandButton>
+            <span class="k-toolbar-spacer"></span>
+            <GridSearchBox />
+        </GridToolBarTemplate>
+
+        <GridColumns>
+            <GridColumn Field="@nameof(ApplicationDto.AppName)" Title="Name"></GridColumn>
+            <GridColumn Field="@nameof(ApplicationDto.AppDescription)" Title="Description"></GridColumn>
+            <GridColumn Field="@nameof(ApplicationDto.ActiveString)" Title="Active"></GridColumn>
+            <GridColumn DisplayFormat="{0:MM/dd/yyyy hh:mm tt}" Field="@nameof(ApplicationDto.DateCreated)" Title="Created" Filterable="false" />
+            <GridCommandColumn>
+                <GridCommandButton Command="EditCommand" Icon="@FontIcon.Pencil" OnClick="@EditApplication"></GridCommandButton>
+            </GridCommandColumn>
+        </GridColumns>
+
+    </TelerikGrid>
+
+    @if (ShowDetails)
+    {
+        <hr />
+        <EditForm Model="@SelectedApplication" OnValidSubmit="@SaveApplication">
+            <DataAnnotationsValidator />
+            <div class="d-flex flex-row">
+                <div class="d-flex flex-column">
+                    <div class="form-group mb-2">
+                        <label class="font-weight-bold" for="AppName">Application Name</label>
+                        <TelerikTextBox Id="AppName" Size="md" Rounded="lg" @bind-Value="@SelectedApplication!.AppName"></TelerikTextBox>
+                        <div class="errorMsgs">
+                            <ValidationMessage For="@(() => SelectedApplication!.AppName)" />
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label class="font-weight-bold" for="AppDesc">Description</label>
+                        <TelerikTextArea Id="AppDesc" Size="md" Rounded="lg" @bind-Value="@SelectedApplication!.AppDescription"></TelerikTextArea>
+                        <div class="errorMsgs">
+                            <ValidationMessage For="@(() => SelectedApplication!.AppDescription)" />
+                        </div>
+                    </div>
+                    <div class="form-group mb-1">
+
+                        <TelerikCheckBox Id="ActiveCheck" @bind-Value="@SelectedApplication!.Active" Size="md"></TelerikCheckBox>
+
+                        <label class="font-weight-bold" for="ActiveCheck">Active</label>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="d-flex flex-row">
+                <div class="mt-2 float-right">
+                    <TelerikButton ButtonType="ButtonType.Button" Icon="@FontIcon.Cancel" OnClick="@CancelDetails">Cancel</TelerikButton>
+
+                    <TelerikButton ButtonType="ButtonType.Submit" Icon="@FontIcon.Save">Save Application</TelerikButton>
+                </div>
+            </div>
+        </EditForm>
+
+    }
+</div>

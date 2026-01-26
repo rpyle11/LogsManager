@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Log.Models/Log.Models.csproj" Id="64e52d2a-1d6c-4c1a-84f9-161bb1bee189" />
+  <Project Path="LogApi.Tests/LogApi.Tests.csproj" Id="1c094596-acb8-46c8-a9bd-7547f8c60252" />
+  <Project Path="LogApi/LogApi.csproj" Id="e740c1ef-e2ca-4a49-a26c-2cf40958a43f" />
+  <Project Path="LogWeb.Tests/LogWeb.Tests.csproj" Id="9b4ad485-65d3-4f48-8fee-c3265d56c671" />
+  <Project Path="LogWeb/LogWeb.csproj" Id="10496fd4-3a42-430e-a727-54903c6ba647" />
+</Solution>

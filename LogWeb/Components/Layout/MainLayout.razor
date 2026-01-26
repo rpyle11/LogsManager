@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+<TelerikRootComponent>
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+
+        <main>
+            <div class="top-row px-4">
+                <div style="padding-top: 1.2em;">
+                    <div class="float-start">
+                        
+                        <span class="sitetitle">Logs Manager <SectionOutlet SectionName="PageName"></SectionOutlet></span>
+                    </div>
+
+                </div>
+                <div class="float-end" style="padding-top: .75em;">
+                    <ErrorBoundary>
+                        <UserInfo />
+                    </ErrorBoundary>
+                </div>
+            </div>
+
+            <article class="content">
+                @Body
+            </article>
+
+
+            <footer class="text-center">
+                <p>&copy; 2025 - Logs Manager</p>
+            </footer>
+        </main>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+</TelerikRootComponent>
