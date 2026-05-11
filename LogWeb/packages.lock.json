@@ -14,49 +14,49 @@
       },
       "Microsoft.AspNetCore.App.Internal.Assets": {
         "type": "Direct",
-        "requested": "[10.0.3, )",
-        "resolved": "10.0.3",
-        "contentHash": "mr3Zn+ht8lijYvlMIasftw9opU9hsLKDdnOgQMmYI3RjWPJLOF9l8+YHDseRkTs97wOrULmJgo/NDCmzL/EGDg=="
+        "requested": "[10.0.7, )",
+        "resolved": "10.0.7",
+        "contentHash": "ao3i+ks0uOQ7FWacI1hqHkUczebmXrGkUB63Xhkc34QbSzG9nYBlDv9v5l6rtCrHMsDW+13kZlpJrSj1HXddqg=="
       },
       "Microsoft.AspNetCore.Authentication.Negotiate": {
         "type": "Direct",
-        "requested": "[10.0.3, )",
-        "resolved": "10.0.3",
-        "contentHash": "tRCbHiNzXnlzenUCS9U8LGLLPia/YvfD+gP4Urqq2RZO1YEs0qG+CzPOm0n/DA0YfF2IQvmqzGFcX1/FsiYeNw==",
+        "requested": "[10.0.7, )",
+        "resolved": "10.0.7",
+        "contentHash": "KNvuz1rU/rdSIpcKNBfuZ+yB/3ThaCF46mAQktLPtoqX6v2AbANjcw48Zpz1BO0ROJ+tGxTu9l9iA05T4XeWSg==",
         "dependencies": {
-          "System.DirectoryServices.Protocols": "10.0.3"
+          "System.DirectoryServices.Protocols": "10.0.7"
         }
       },
       "System.DirectoryServices.AccountManagement": {
         "type": "Direct",
-        "requested": "[10.0.3, )",
-        "resolved": "10.0.3",
-        "contentHash": "mllqB05qE2q9AHpyy5yKMSdz66AKCYQPP1I7Ny4+YjaMy7ttI91Ga/NWjOf7iPCXv1PHvgKHVtDrltm7yGKJPw==",
+        "requested": "[10.0.7, )",
+        "resolved": "10.0.7",
+        "contentHash": "9Bx/qEmR8p5ZjL8T/HZtKONw09y44NoWVCJyXRpmI+DD2xVVuNb9b9GY8s++OoU3i4QDDZt1D/7fuJEAp9zfQg==",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "10.0.3",
-          "System.DirectoryServices": "10.0.3",
-          "System.DirectoryServices.Protocols": "10.0.3"
+          "System.Configuration.ConfigurationManager": "10.0.7",
+          "System.DirectoryServices": "10.0.7",
+          "System.DirectoryServices.Protocols": "10.0.7"
         }
       },
       "Telerik.UI.for.Blazor": {
         "type": "Direct",
-        "requested": "[13.0.0, )",
-        "resolved": "13.0.0",
-        "contentHash": "QCnfxmfz93QehtVbvXv/dPcHsb4nJrtK3PbPvCsaAj7LEKwmqRcG/DkfEUzNLalGsa4ngPvA02mdHRRAp9BPZQ==",
+        "requested": "[13.3.0, )",
+        "resolved": "13.3.0",
+        "contentHash": "x47yZHKAdqAjd4WL/PeAggJCALtySi0n5Rv0QTXhi76r6uizabPE3VIN0jZ1VWXMUB71SJSncP+3jqbvPFDjOQ==",
         "dependencies": {
           "Microsoft.Extensions.AI.Abstractions": "9.5.0",
           "Telerik.AI.SmartComponents.Extensions": "2.1.0",
           "Telerik.DataSource": "4.0.1",
-          "Telerik.Documents.Spreadsheet": "2026.1.210",
-          "Telerik.Documents.Spreadsheet.FormatProviders.Pdf": "2026.1.210",
-          "Telerik.Documents.SpreadsheetStreaming": "2026.1.210",
+          "Telerik.Documents.Spreadsheet": "2026.1.402",
+          "Telerik.Documents.Spreadsheet.FormatProviders.Pdf": "2026.1.402",
+          "Telerik.Documents.SpreadsheetStreaming": "2026.1.402",
           "Telerik.FontIcons": "4.8.0",
-          "Telerik.Licensing": "[1.6.40, 2.0.0)",
+          "Telerik.Licensing": "[1.8.2, 2.0.0)",
           "Telerik.Pivot.Core": "0.1.7",
           "Telerik.Pivot.DataProviders.Xmla": "0.1.8",
           "Telerik.Recurrence": "0.2.7",
           "Telerik.SvgIcons": "4.8.0",
-          "Telerik.Zip": "2026.1.210"
+          "Telerik.Zip": "2026.1.402"
         }
       },
       "Microsoft.Extensions.AI": {
@@ -87,21 +87,21 @@
       },
       "System.Configuration.ConfigurationManager": {
         "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "69ZT/MYxQSxwdiiHRtI08noXiG5drj/bXDDZISmeWkNUtbIfYgmTiof16tCVOLTdmSQY7W7gwxkMliKdreWHGQ==",
+        "resolved": "10.0.7",
+        "contentHash": "NUV7+8ZpwAdtylEypliCwxTyMtt5oARCdEN9hOflL2dq5sGXHKAtBoVs1rb8qEj85ThC/5vJKDQmdiqKxZRgag==",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "10.0.3"
+          "System.Security.Cryptography.ProtectedData": "10.0.7"
         }
       },
       "System.DirectoryServices": {
         "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "sqjtVOs35ortRSABZBhUq1YYtP9ScGMyix+F12K214KkAnfL1D8dS3oXl4U5uA4tsuP/WAiFf3rMvktkh/x1hA=="
+        "resolved": "10.0.7",
+        "contentHash": "CSYpGw8Q1NVxl2xwH4Y3Fw7ZyUUf/m/9ZWNU4WAFfYqvguxPP21bEJgfGwZWKqwg3awuOLlM9uel5MP2Tc8lRg=="
       },
       "System.DirectoryServices.Protocols": {
         "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "LsmWlhBLelsI0+oHjgZd+WeeX/60TazKv/7xE+z88zONMerx2JWklfmpmOO6VHr1sys5bIJWHtjxhjRruVa4jg=="
+        "resolved": "10.0.7",
+        "contentHash": "AemhPGgFaSZ5468giPBAXdwqbyKW9ekhbzQWUy/rSbCf3NdsBOzFg2PBfg08x0sN5UK1oZGa7h9SWCwnwTRxyw=="
       },
       "System.Security.Cryptography.Pkcs": {
         "type": "Transitive",
@@ -110,8 +110,8 @@
       },
       "System.Security.Cryptography.ProtectedData": {
         "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "JCKbH/CN5l0CSoJBILEvJmNQVp5vV+FY3q2ue4K9p4eDT4mFEv0bjTQCV+MD6Qk1b/qk9fWmZZKhG1TklbXw1Q=="
+        "resolved": "10.0.7",
+        "contentHash": "eqKW9wyPUhZi6pxy9Y0fQO/bdHROcwj0tYdmoGEPCPCtCJLFdVVAlzuuYYEnJI64HxhoXPYGhtx891g/jwN4rg=="
       },
       "Telerik.AI.SmartComponents.Extensions": {
         "type": "Transitive",
@@ -128,48 +128,48 @@
       },
       "Telerik.Documents.Core": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "r5gqqeZNBtJq/H3OqIjt+WWyWUgT0X3VRv7fqII6Mr0+qoLCmQZ3F69LBTzKqV59/sPVl/SuAHbmljHHvvI8Aw==",
+        "resolved": "2026.1.402",
+        "contentHash": "bpku6ZjPq0wRlzAXtFWQy/sUaTar4I5LRCnZvwG43afdgGyvJhwYhq6UKCsEyZUQjFqIhxmuLxiHK3kKpGbDLg==",
         "dependencies": {
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "Telerik.Documents.Fixed": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "VPEOuM4j/fedFt1Z0LCXXZoT0fIueCym4gYT4QKH8fjN5E6mBQfrAaciEV6kIXWBESQ5RZC8sMhbVW2LX6qx8A==",
+        "resolved": "2026.1.402",
+        "contentHash": "6dBxBW1RJOfCYxzpHkJ+ofoNfGXZAGgKyhDLX/59p2q75tjJFf/AJ4lXklkv38uznV2hwP6DC9hpEBhpRxsuvA==",
         "dependencies": {
           "System.Security.Cryptography.Pkcs": "9.0.9",
-          "Telerik.Documents.Core": "[2026.1.210]",
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Documents.Core": "[2026.1.402]",
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "Telerik.Documents.Spreadsheet": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "tn93rFt5r1JI+pNLggtzzhrEnUoR0B9w8OSKyYjuOz8wu/Na+19Okr8BymOguCoGQnf5v9MIEMajrBZ5kyHptg==",
+        "resolved": "2026.1.402",
+        "contentHash": "A2trfHlLeCiL7xLsViIuzUKNDtpGNbGwikE7vPuia4J9qTcrc0uLpKE5JUkRrdF4k2OCi+FsWUYQOVCuqKc15A==",
         "dependencies": {
-          "Telerik.Documents.Core": "[2026.1.210]",
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Documents.Core": "[2026.1.402]",
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "Telerik.Documents.Spreadsheet.FormatProviders.Pdf": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "Vho1Q1HikoZUshDlAl6dTXy3fPMuH6wu0H2MaSRwTvKlWIrppGWZnvVPY8XCXJIYe3VYIs+tQq/ZDJMsPZCw4Q==",
+        "resolved": "2026.1.402",
+        "contentHash": "hjOIdHeOcbrAGsN2m6OqcC8c64mO1D3Crd2nzPJ6VZ42Xq6+DCxVJmPB9H1MxC8vk1zaR1EmnmahhihvBH9eJg==",
         "dependencies": {
-          "Telerik.Documents.Core": "[2026.1.210]",
-          "Telerik.Documents.Fixed": "[2026.1.210]",
-          "Telerik.Documents.Spreadsheet": "[2026.1.210]",
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Documents.Core": "[2026.1.402]",
+          "Telerik.Documents.Fixed": "[2026.1.402]",
+          "Telerik.Documents.Spreadsheet": "[2026.1.402]",
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "Telerik.Documents.SpreadsheetStreaming": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "cAtgYKEJT0Dc6aYQ+cGVADwizukIpUenKx5SFR6ujaBe6SHoYauWSUYMtr1wxUe9McfonzGyT+A/FwO97w3oPw==",
+        "resolved": "2026.1.402",
+        "contentHash": "7Jp+vNaXz3LE+jjJEuTqghJimtFF/vSDoqdg6eD7GIq9etZQyESEMlpvy5hxfDjxDBPBAXlK/zVPYXirVfuY1A==",
         "dependencies": {
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "Telerik.FontIcons": {
@@ -179,8 +179,8 @@
       },
       "Telerik.Licensing": {
         "type": "Transitive",
-        "resolved": "1.6.40",
-        "contentHash": "GMGBM+0vGdMbpM6DW70NwdKq8je+VU9DL8xURHRmP2y79VdUnHsta5CzYoMu5KhawVPNMWWj0YBJGkFGHUGwdg=="
+        "resolved": "1.8.2",
+        "contentHash": "+LEIcXj33e2eyzxAErLejUFI2OuKOCFt4GyGfusf+EH7/YITmBU0381eJVwKyF3ZGux9OSzzmu1oaUPG/NYhLQ=="
       },
       "Telerik.Pivot.Core": {
         "type": "Transitive",
@@ -207,42 +207,14 @@
       },
       "Telerik.Zip": {
         "type": "Transitive",
-        "resolved": "2026.1.210",
-        "contentHash": "aTsAQQeO3+a7FHjxd8vWrVeFfoYkQGOywWHMsWubvo/v1b4dPCn+Mp5IruwT2FW+ssaNOBw8kuLDk4slo8Csjw==",
+        "resolved": "2026.1.402",
+        "contentHash": "4NWtJNjUZ4z20BPotonuRUo7BhAuwFbat0+GoGvN9OuS2s2fA8DN1SFhnutcaQFRg2L9mJotDXqYCO6N8yJvVQ==",
         "dependencies": {
-          "Telerik.Licensing": "[1.6.40, 2.0.0)"
+          "Telerik.Licensing": "[1.8.2, 2.0.0)"
         }
       },
       "log.models": {
         "type": "Project"
-      }
-    },
-    "net10.0/win-x64": {
-      "System.DirectoryServices.AccountManagement": {
-        "type": "Direct",
-        "requested": "[10.0.3, )",
-        "resolved": "10.0.3",
-        "contentHash": "mllqB05qE2q9AHpyy5yKMSdz66AKCYQPP1I7Ny4+YjaMy7ttI91Ga/NWjOf7iPCXv1PHvgKHVtDrltm7yGKJPw==",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "10.0.3",
-          "System.DirectoryServices": "10.0.3",
-          "System.DirectoryServices.Protocols": "10.0.3"
-        }
-      },
-      "System.DirectoryServices": {
-        "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "sqjtVOs35ortRSABZBhUq1YYtP9ScGMyix+F12K214KkAnfL1D8dS3oXl4U5uA4tsuP/WAiFf3rMvktkh/x1hA=="
-      },
-      "System.DirectoryServices.Protocols": {
-        "type": "Transitive",
-        "resolved": "10.0.3",
-        "contentHash": "LsmWlhBLelsI0+oHjgZd+WeeX/60TazKv/7xE+z88zONMerx2JWklfmpmOO6VHr1sys5bIJWHtjxhjRruVa4jg=="
-      },
-      "System.Security.Cryptography.Pkcs": {
-        "type": "Transitive",
-        "resolved": "9.0.9",
-        "contentHash": "Y7/wY5lqrzJOu53yLFLPGaeKBcdWNw193udOFRB2joFDVpXLkmfPpfgks7dEIJYPIrW4k3onwR+4nQz6vIaaqA=="
       }
     }
   }
